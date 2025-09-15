@@ -7,6 +7,11 @@ function StudentDashboard() {
   const [error, setError] = useState(null);
   const [studentName, setStudentName] = useState('');
 
+  // Add this useEffect to update the page title dynamically
+  useEffect(() => {
+    document.title = 'Student Dashboard - RLS-Guard-Dog';
+  }, []);
+
   useEffect(() => {
     const fetchUserData = async () => {
       const { data: { session } } = await supabase.auth.getSession();

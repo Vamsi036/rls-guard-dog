@@ -9,6 +9,11 @@ function TeacherDashboard() {
   const [editingScore, setEditingScore] = useState('');
   const [teacherName, setTeacherName] = useState('');
 
+  // Add this useEffect to update the page title dynamically
+  useEffect(() => {
+    document.title = 'Teacher Dashboard - RLS-Guard-Dog';
+  }, []);
+
   const fetchProgress = async () => {
     const { data: { session } } = await supabase.auth.getSession();
     const teacherId = session?.user?.id;
