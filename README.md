@@ -1,12 +1,28 @@
-# React + Vite
+Project Name: RLS-Guard-Dog
+This is a classroom management application designed to demonstrate Row-Level Security (RLS) using Supabase and React. The application provides different views and access levels for students and teachers, ensuring that users can only see and interact with data relevant to their role.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features 🔒
+Role-Based Access Control: Students can only view their own progress, while teachers have a comprehensive overview of all students.
 
-Currently, two official plugins are available:
+Secure Authentication: User login is managed securely.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Teacher Actions: Teachers can update and manage student scores through an intuitive interface.
 
-## Expanding the ESLint configuration
+Technologies Used 🛠️
+Frontend:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React: A JavaScript library for building user interfaces.
+
+Vite: A fast build tool for modern web projects.
+
+Backend & Database:
+
+Supabase: An open-source Firebase alternative used for user authentication and as the database.
+
+Styling:
+
+Bootstrap: A CSS framework for responsive design.
+
+Deployment 🚀
+This project is deployed using Vercel and is accessible at the following URL:
+https://rls-guard-dog-olive.vercel.app
